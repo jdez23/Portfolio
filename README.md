@@ -2,8 +2,6 @@
 
 This repository contains the source code for my personal portfolio website, designed to showcase my skills in web development, creative technology, and design. The site features a clean, modern aesthetic with a focus on user experience and visual storytelling.
 
-**Live Demo:** [**jesse-hernandez.vercel.app**](https://jesse-hernandez.vercel.app)
-
 ---
 
 ## ✨ Features
@@ -24,7 +22,6 @@ This project was built using the following technologies:
 - **[React](https://reactjs.org/)** - A JavaScript library for building user interfaces.
 - **[Tailwind CSS](https://tailwindcss.com/)** - A utility-first CSS framework for rapid UI development.
 - **[TypeScript](https://www.typescriptlang.org/)** - A typed superset of JavaScript that enhances code quality.
-- **[Vercel](https://vercel.com/)** - Used for deployment and hosting.
 
 ---
 

@@ -48,7 +48,7 @@ export default function CyclesStudiosPage() {
                                 rel="noopener noreferrer"
                                 className="px-4 py-1 rounded-full border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors font-sans text-sm"
                             >
-                                view
+                                View
                             </a>
                             <a href="https://github.com/jdez23/Cycles-Studios" target="_blank" rel="noopener noreferrer">
                                 <img src="/github-mark-white.svg" alt="GitHub" className="w-6 h-6" />
@@ -170,8 +170,8 @@ export default function CyclesStudiosPage() {
                     />
                 </div>
                 <div className="relative flex justify-between items-center text-white max-w-6xl mx-auto">
-                    <span className="font-semibold text-lg inked-font">Contact</span>
-                    <span className="font-semibold text-lg inked-font">Let's shift culture.</span>
+                    <span className="font-semibold text-lg">Contact</span>
+                    <span className="font-semibold text-lg">Let's shift culture.</span>
                 </div>
             </footer>
         </div>
