@@ -59,7 +59,7 @@ export default function CyclesPage() {
                         Cycles is a mobile app I designed and built to bring human connection back into music discovery.
                         It allows users to share playlists, follow others, and create a feed of curated music.
                         it turns listening into a communal act. Built with React Native, Django, and Firebase,
-                        it's designed for simplicity, and cultural relevance.
+                        it&apos;s designed for simplicity, and cultural relevance.
                     </p>
                 </div>
             </section>
@@ -109,7 +109,7 @@ export default function CyclesPage() {
                         <div className="flex flex-col gap-4 text-center text-white">
                             <h3 className="text-2xl font-bold">THE IMPACT</h3>
                             <p className="text-lg">
-                                WITHIN WEEKS OF LAUNCH, CYCLES ATTRACTED EARLY ADOPTERS WHO BEGAN ACTIVELY CURATING AND ENGAGING WITH SHARED PLAYLISTS. THE APP'S HUMAN-CENTERED DESIGN LED TO 200+ ACTIVE USERS, ESTABLISHED A FOUNDATION FOR COMMUNITY-DRIVEN DISCOVERY, AND PROVED THAT MUSIC CURATION CAN THRIVE WHEN PEOPLE, NOT ALGORITHMS, DRIVE THE EXPERIENCE.
+                                WITHIN WEEKS OF LAUNCH, CYCLES ATTRACTED EARLY ADOPTERS WHO BEGAN ACTIVELY CURATING AND ENGAGING WITH SHARED PLAYLISTS. THE APP&apos;S HUMAN-CENTERED DESIGN LED TO 200+ ACTIVE USERS, ESTABLISHED A FOUNDATION FOR COMMUNITY-DRIVEN DISCOVERY, AND PROVED THAT MUSIC CURATION CAN THRIVE WHEN PEOPLE, NOT ALGORITHMS, DRIVE THE EXPERIENCE.
                             </p>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ export default function CyclesPage() {
                     <div className="flex flex-col gap-6 text-center">
                         <h3 className="text-2xl font-bold mt-4">From Ideation to Wireframe</h3>
                         <p className="text-lg text-white/80 px-4">
-                            The initial concept for Cycles was born from a desire to make music discovery a shared experience. I started by sketching out core user flows on paper, focusing on how users would share, discover, and interact with playlists. These sketches evolved into low-fidelity wireframes, mapping out the app's structure and ensuring the main features were intuitive and accessible.
+                            The initial concept for Cycles was born from a desire to make music discovery a shared experience. I started by sketching out core user flows on paper, focusing on how users would share, discover, and interact with playlists. These sketches evolved into low-fidelity wireframes, mapping out the app&apos;s structure and ensuring the main features were intuitive and accessible.
                         </p>
                         <img src="/wireframeSketch.jpg" alt="Ideation and Wireframe" className="w-7/8 mx-auto" />
                     </div>
@@ -132,7 +132,7 @@ export default function CyclesPage() {
                     <div className="flex flex-col gap-6 justify-center items-center text-center h-full">
                         <h3 className="text-2xl font-bold">High-Fidelity Mockups</h3>
                         <p className="text-lg text-white/80 px-4 max-w-xl">
-                            With the wireframes as a blueprint, I moved into Figma to create high-fidelity mockups. This phase was about defining the visual identity of Cycles like choosing a color palette, typography, and iconography that felt modern and engaging. I designed each screen with a focus on a clean, minimalist aesthetic that would keep the user's attention on the music and the community. The result was a polished representation of the final app.
+                            With the wireframes as a blueprint, I moved into Figma to create high-fidelity mockups. This phase was about defining the visual identity of Cycles like choosing a color palette, typography, and iconography that felt modern and engaging. I designed each screen with a focus on a clean, minimalist aesthetic that would keep the user&apos;s attention on the music and the community. The result was a polished representation of the final app.
                         </p>
                         <div className="grid grid-cols-2 gap-4 mt-4 place-items-center w-full max-w-2xl">
                             <img src="/wireframe1.png" alt="High-Fidelity Mockup 1" className="w-full h-96 object-contain" />
@@ -161,7 +161,7 @@ export default function CyclesPage() {
                         </Link>
                         <Link href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</Link>
                     </span>
-                    <span className="font-semibold text-lg">Let's shift culture.</span>
+                    <span className="font-semibold text-lg">Let&apos;s shift culture.</span>
                 </div>
             </footer>
         </div>

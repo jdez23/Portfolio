@@ -150,7 +150,7 @@ export default function CyclesStudiosPage() {
                         <div className="flex flex-col gap-4 items-center text-center">
                             <h3 className="text-xl sm:text-2xl font-bold">Street Interviews</h3>
                             <p className="text-white/80 text-base sm:text-lg">
-                                All across the Bay Area, I stage rapid-fire interviews that reveal how everyday listeners connect music to memory, identity, and community. To turn these moments into an interactive experience, I partnered with beloved local retailer Five Little Monkeys and hosted an on-site giveaway that tied a question of the day to a toy-store prize. I wrote the prompts, handled on-location directing, and produced a series of vertical clips that blended artist discovery with playful community engagement. The collaboration boosted the store's foot traffic, added a surge of new followers to our channels, and showed how content strategy can double as user research that feeds directly into the product roadmap.
+                                All across the Bay Area, I stage rapid-fire interviews that reveal how everyday listeners connect music to memory, identity, and community. To turn these moments into an interactive experience, I partnered with beloved local retailer Five Little Monkeys and hosted an on-site giveaway that tied a question of the day to a toy-store prize. I wrote the prompts, handled on-location directing, and produced a series of vertical clips that blended artist discovery with playful community engagement. The collaboration boosted the store&apos;s foot traffic, added a surge of new followers to our channels, and showed how content strategy can double as user research that feeds directly into the product roadmap.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 mt-4 items-center justify-center">
                                 <div className="text-center">
@@ -166,11 +166,11 @@ export default function CyclesStudiosPage() {
                                     </p>
                                 </div>
                                 <div className="text-center">
-                                    <img src="/interview2.jpg" alt="San Francisco Fisherman's Wharf" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <img src="/interview2.jpg" alt="San Francisco Fisherman&apos;s Wharf" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
                                     <p className="mt-2 text-sm flex flex-col items-center justify-center gap-1">
                                         <span>San Francisco</span>
                                         <span className="flex items-center justify-center gap-2">
-                                            Fisherman's Wharf
+                                            Fisherman&apos;s Wharf
                                             <Link href="https://www.instagram.com/reel/DE18yuIxSYp/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
                                                 <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
                                             </Link>
@@ -207,7 +207,7 @@ export default function CyclesStudiosPage() {
                     {/* Final Paragraph */}
                     <div className="text-center max-w-4xl mx-auto mt-16 sm:mt-32 mb-16 sm:mb-24 font-sans">
                         <p className="text-base sm:text-xl text-white">
-                            Cycles Studios has been my test-bed for everything I love about product work: listening first, prototyping fast, and shipping ideas that bring people closer to music and to one another. Curating interviews, engineering tracks, and designing multiplatform experiences has taught me that technology is only powerful when it feels personal. I'm now looking to bring that blend of creative curiosity, systems thinking, and hands-on execution to a team that wants to push culture forward—one thoughtful product at a time.
+                            Cycles Studios has been my test-bed for everything I love about product work: listening first, prototyping fast, and shipping ideas that bring people closer to music and to one another. Curating interviews, engineering tracks, and designing multiplatform experiences has taught me that technology is only powerful when it feels personal. I&apos;m now looking to bring that blend of creative curiosity, systems thinking, and hands-on execution to a team that wants to push culture forward—one thoughtful product at a time.
                         </p>
                     </div>
                 </div>
@@ -224,7 +224,7 @@ export default function CyclesStudiosPage() {
                         </Link>
                         <Link href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</Link>
                     </span>
-                    <span className="font-semibold text-lg">Let's shift culture.</span>
+                    <span className="font-semibold text-lg">Let&apos;s shift culture.</span>
                 </div>
             </footer>
         </div>

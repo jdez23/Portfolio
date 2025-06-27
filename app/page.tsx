@@ -104,7 +104,7 @@ export default function Home() {
                 <span className="px-3 py-1 rounded-full bg-black/10 text-white text-xs font-sans border border-white/20">Cloud</span>
                 <span className="px-3 py-1 rounded-full bg-black/10 text-white text-xs font-sans border border-white/20">Full-Stack</span>
               </div>
-              <p className="text-white/80 text-sm font-sans flex-grow">Cycles is a mobile app I designed and built to bring human connection back into music discovery. It allows users to share playlists, follow others, and create a feed of curated music — turning listening into a communal act. Built with React Native, Django, and Firebase, it's designed for speed, simplicity, and cultural relevance.</p>
+              <p className="text-white/80 text-sm font-sans flex-grow">Cycles is a mobile app I designed and built to bring human connection back into music discovery. It allows users to share playlists, follow others, and create a feed of curated music — turning listening into a communal act. Built with React Native, Django, and Firebase, it&apos;s designed for speed, simplicity, and cultural relevance.</p>
               <div className="flex items-center gap-4 mt-auto">
                 <Link href="/cycles" className="w-fit px-2 py-1 rounded-full border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors font-sans text-xs">
                   View
