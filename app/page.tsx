@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -10,10 +9,10 @@ export default function Home() {
         <nav className="w-full flex items-center justify-between px-8 py-6 absolute top-0 left-0 z-20">
           <Link href="/" className="text-white font-bold text-lg tracking-wide">Jesse Hernandez</Link>
           <div className="flex gap-6">
-            <a href="#about" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</a>
-            <a href="#projects" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</a>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Resume</a>
-            <a href="mailto:jessemhernandez@gmail.com" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</a>
+            <Link href="#about" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</Link>
+            <Link href="#projects" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</Link>
+            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Resume</Link>
+            <Link href="mailto:jessemhernandez@gmail.com" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</Link>
           </div>
         </nav>
         {/* Horizontal Line */}
@@ -42,19 +41,19 @@ export default function Home() {
           </p>
           {/* Social Icons Row */}
           <div className="flex flex-row items-center justify-center gap-4 mt-2 mb-2">
-            <a
+            <Link
               href="#projects"
               className="rounded-full border-2 border-white bg-white/10 text-white px-3 py-1 text-base font-semibold backdrop-blur-sm hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/60"
               style={{ minWidth: 100 }}
             >
               View Work
-            </a>
-            <a href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
               <img src="/github-mark-white.svg" alt="GitHub" className="w-7 h-7 hover:scale-110 transition-transform" />
-            </a>
-            <a href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
               <img src="/linkedin-white.png" alt="LinkedIn" className="w-8 h-7.5 hover:scale-110 transition-transform" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -163,9 +162,9 @@ export default function Home() {
                 <h3 className="text-xl sm:text-2xl font-semibold font-sans">Deli-Stones</h3>
                 <p className="text-base sm:text-lg font-sans">Deli-Stones is a Java-based point-of-sale application that lets customers build fully customized sandwich orders through a command-line interface. Users can add sandwiches, drinks, and chips, with pricing dynamically calculated based on size and extras. Upon checkout, the order is saved as a timestamped receipt file.</p>
                 <div className="flex gap-2 flex-wrap mt-2">
-                  <a href="https://github.com/jdez23/LearnToCode_Capstones/tree/main/Deli-Stones" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/jdez23/LearnToCode_Capstones/tree/main/Deli-Stones" target="_blank" rel="noopener noreferrer">
                     <img src="/github-mark.svg" alt="GitHub" className="w-6 h-6" />
-                  </a>
+                  </Link>
                   <span className="px-3 py-1 rounded-full bg-black/10 text-black text-xs font-sans border border-black/20">Java</span>
                   <span className="px-3 py-1 rounded-full bg-black/10 text-black text-xs font-sans border border-black/20">Backend</span>
                 </div>
@@ -185,15 +184,15 @@ export default function Home() {
           </div>
           <div className="relative flex justify-between items-center text-white mx-auto">
             <span className="flex items-center gap-4">
-              <a href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
                 <img src="/github-mark-white.svg" alt="GitHub" className="w-6 h-6 hover:scale-110 transition-transform" />
-              </a>
-              <a href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
+              </Link>
+              <Link href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
                 <img src="/linkedin-white.png" alt="LinkedIn" className="w-7 h-6.5 hover:scale-110 transition-transform" />
-              </a>
-              <a href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</a>
+              </Link>
+              <Link href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</Link>
             </span>
-            <span className="font-semibold text-lg">Let's shift culture.</span>
+            <span className="font-semibold text-lg">Let&apos;s shift culture.</span>
           </div>
         </footer>
       </section>

@@ -7,10 +7,10 @@ export default function CyclesPage() {
             <nav className="w-full flex items-center justify-between px-8 py-6 absolute top-0 left-0 z-20">
                 <Link href="/" className="text-white font-bold text-lg tracking-wide">Jesse Hernandez</Link>
                 <div className="flex gap-6">
-                    <a href="/#about" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</a>
-                    <a href="/#projects" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</a>
-                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Resume</a>
-                    <a href="mailto:jessemhernandez@gmail.com" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</a>
+                    <Link href="/#about" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</Link>
+                    <Link href="/#projects" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</Link>
+                    <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Resume</Link>
+                    <Link href="mailto:jessemhernandez@gmail.com" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</Link>
                 </div>
             </nav>
             {/* Horizontal Line */}
@@ -40,12 +40,12 @@ export default function CyclesPage() {
                         <p className="text-lg text-white/80">React Native - Django/DRF - Firebase - AWS - Figma</p>
 
                         <div className="flex items-center gap-4 mt-1">
-                            <a href="https://apps.apple.com/us/app/cycles-discover-playlists/id6446672039" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://apps.apple.com/us/app/cycles-discover-playlists/id6446672039" target="_blank" rel="noopener noreferrer">
                                 <img src="/appStore.png" alt="Download on the App Store" className="w-30" />
-                            </a>
-                            <a href="https://github.com/jdez23/cycles" target="_blank" rel="noopener noreferrer">
+                            </Link>
+                            <Link href="https://github.com/jdez23/cycles" target="_blank" rel="noopener noreferrer">
                                 <img src="/github-mark-white.svg" alt="GitHub" className="w-8 h-8" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -153,13 +153,13 @@ export default function CyclesPage() {
                 </div>
                 <div className="relative flex justify-between items-center text-white mx-auto">
                     <span className="flex items-center gap-4">
-                        <a href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
                             <img src="/github-mark-white.svg" alt="GitHub" className="w-6 h-6 hover:scale-110 transition-transform" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
                             <img src="/linkedin-white.png" alt="LinkedIn" className="w-7 h-6.5 hover:scale-110 transition-transform" />
-                        </a>
-                        <a href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</a>
+                        </Link>
+                        <Link href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</Link>
                     </span>
                     <span className="font-semibold text-lg">Let's shift culture.</span>
                 </div>

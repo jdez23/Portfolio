@@ -20,10 +20,10 @@ export default function CyclesStudiosPage() {
             <nav className="w-full flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6 absolute top-0 left-0 z-20">
                 <Link href="/" className="text-white font-bold text-lg tracking-wide">Jesse Hernandez</Link>
                 <div className="flex gap-4 sm:gap-6">
-                    <a href="/#about" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</a>
-                    <a href="/#projects" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</a>
-                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Resume</a>
-                    <a href="mailto:jessemhernandez@gmail.com" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</a>
+                    <Link href="/#about" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</Link>
+                    <Link href="/#projects" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</Link>
+                    <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Resume</Link>
+                    <Link href="mailto:jessemhernandez@gmail.com" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</Link>
                 </div>
             </nav>
             {/* Horizontal Line */}
@@ -43,17 +43,17 @@ export default function CyclesStudiosPage() {
                             A creative studio bridging art, music, and tech for the next generation of culture.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 mt-6 sm:mt-6">
-                            <a
+                            <Link
                                 href="https://www.cyclesstudios.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-4 py-1 rounded-full border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors font-sans text-sm"
                             >
                                 View site
-                            </a>
-                            <a href="https://github.com/jdez23/Cycles-Studios" target="_blank" rel="noopener noreferrer">
+                            </Link>
+                            <Link href="https://github.com/jdez23/Cycles-Studios" target="_blank" rel="noopener noreferrer">
                                 <img src="/github-mark-white.svg" alt="GitHub" className="w-6 h-6" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -83,27 +83,27 @@ export default function CyclesStudiosPage() {
                                     <img src="/sophia.jpg" alt="Sophia Frame" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
                                     <p className="mt-2 text-sm flex items-center justify-center gap-2">
                                         Sophia Frame
-                                        <a href="https://open.spotify.com/track/3FAhrboOosw3eojdgseKfy?si=ed103b2d72974f29" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://open.spotify.com/track/3FAhrboOosw3eojdgseKfy?si=ed103b2d72974f29" target="_blank" rel="noopener noreferrer">
                                             <img src="/spotify.png" alt="Spotify" className="w-4 h-4 object-contain inline-block" />
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                                 <div className="text-center">
                                     <img src="/chezi.jpg" alt="Chezi" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
                                     <p className="mt-2 text-sm flex items-center justify-center gap-2">
                                         Chezi
-                                        <a href="https://open.spotify.com/album/4EDEhhvIeH5RhERTdydXlS?si=LZM7KaK4TGu2JBkxa4p17g" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://open.spotify.com/album/4EDEhhvIeH5RhERTdydXlS?si=LZM7KaK4TGu2JBkxa4p17g" target="_blank" rel="noopener noreferrer">
                                             <img src="/spotify.png" alt="Spotify" className="w-4 h-4 object-contain inline-block" />
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                                 <div className="text-center">
                                     <img src="/jdez.png" alt="J.Dez" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
                                     <p className="mt-2 text-sm flex items-center justify-center gap-2">
                                         J.Dez
-                                        <a href="https://open.spotify.com/track/2bLChcYmqDya9cJofRNQ78?si=0b2b374d6c7740fe" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://open.spotify.com/track/2bLChcYmqDya9cJofRNQ78?si=0b2b374d6c7740fe" target="_blank" rel="noopener noreferrer">
                                             <img src="/spotify.png" alt="Spotify" className="w-4 h-4 object-contain inline-block" />
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </div>
@@ -120,27 +120,27 @@ export default function CyclesStudiosPage() {
                                     <img src="/shante.jpg" alt="Shante" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
                                     <p className="mt-2 text-sm flex items-center justify-center gap-2">
                                         Shante
-                                        <a href="https://www.instagram.com/reel/DINlJ0Sx8lc/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://www.instagram.com/reel/DINlJ0Sx8lc/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
                                             <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                                 <div className="text-center">
                                     <img src="/malachi.jpg" alt="Malachi" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
                                     <p className="mt-2 text-sm flex items-center justify-center gap-2">
                                         Malachi
-                                        <a href="https://www.instagram.com/reel/DIMaMtlSCrJ/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://www.instagram.com/reel/DIMaMtlSCrJ/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
                                             <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                                 <div className="text-center">
                                     <img src="/kiyomi.jpg" alt="Kiyomi" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
                                     <p className="mt-2 text-sm flex items-center justify-center gap-2">
                                         Kiyomi
-                                        <a href="https://www.instagram.com/reel/DIPyditSCvG/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://www.instagram.com/reel/DIPyditSCvG/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
                                             <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
-                                        </a>
+                                        </Link>
                                     </p>
                                 </div>
                             </div>
@@ -159,9 +159,9 @@ export default function CyclesStudiosPage() {
                                         <span>collab with</span>
                                         <span className="flex items-center justify-center gap-2">
                                             Five Little Monkeys
-                                            <a href="https://www.instagram.com/reel/DHMVbYkyPCB/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://www.instagram.com/reel/DHMVbYkyPCB/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
                                                 <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
-                                            </a>
+                                            </Link>
                                         </span>
                                     </p>
                                 </div>
@@ -171,9 +171,9 @@ export default function CyclesStudiosPage() {
                                         <span>San Francisco</span>
                                         <span className="flex items-center justify-center gap-2">
                                             Fisherman's Wharf
-                                            <a href="https://www.instagram.com/reel/DE18yuIxSYp/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://www.instagram.com/reel/DE18yuIxSYp/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
                                                 <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
-                                            </a>
+                                            </Link>
                                         </span>
                                     </p>
                                 </div>
@@ -183,9 +183,9 @@ export default function CyclesStudiosPage() {
                                         <span>World of</span>
                                         <span className="flex items-center justify-center gap-2">
                                             Dance 2025
-                                            <a href="https://www.instagram.com/reel/DGMyTAvpId_/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://www.instagram.com/reel/DGMyTAvpId_/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
                                                 <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
-                                            </a>
+                                            </Link>
                                         </span>
                                     </p>
                                 </div>
@@ -198,9 +198,9 @@ export default function CyclesStudiosPage() {
                             <p className="text-white/80 text-base sm:text-lg">
                                 Cycles Studios is designed as a living product, so I prototype content on Instagram and TikTok the way I iterate on software features. I test new formats, read the analytics and refine weekly, turning storytelling experiments into measurable community growth. Every post is treated like a mini-launch, balancing narrative, design and data to keep the brand and its artists in motion.
                             </p>
-                            <a href="https://www.instagram.com/cycles_studios/" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://www.instagram.com/cycles_studios/" target="_blank" rel="noopener noreferrer">
                                 <img src="/igTrans.png" alt="Instagram" className="w-12 h-12 object-contain" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -216,13 +216,13 @@ export default function CyclesStudiosPage() {
             <footer className="relative w-full py-8 sm:py-12 px-4 sm:px-8 font-sans overflow-hidden bg-[#101010]">
                 <div className="relative flex flex-col sm:flex-row justify-between items-center text-white max-w-6xl mx-auto gap-2 sm:gap-0">
                     <span className="flex items-center gap-4">
-                        <a href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
                             <img src="/github-mark-white.svg" alt="GitHub" className="w-6 h-6 hover:scale-110 transition-transform" />
-                        </a>
-                        <a href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
                             <img src="/linkedin-white.png" alt="LinkedIn" className="w-7 h-6.5 hover:scale-110 transition-transform" />
-                        </a>
-                        <a href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</a>
+                        </Link>
+                        <Link href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</Link>
                     </span>
                     <span className="font-semibold text-lg">Let's shift culture.</span>
                 </div>
