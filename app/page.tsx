@@ -10,9 +10,10 @@ export default function Home() {
         <nav className="w-full flex items-center justify-between px-8 py-6 absolute top-0 left-0 z-20">
           <Link href="/" className="text-white font-bold text-lg tracking-wide">Jesse Hernandez</Link>
           <div className="flex gap-6">
-            <span className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</span>
-            <span className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</span>
-            <span className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</span>
+            <a href="#about" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</a>
+            <a href="#projects" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Resume</a>
+            <a href="mailto:jessemhernandez@gmail.com" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</a>
           </div>
         </nav>
         {/* Horizontal Line */}
@@ -29,22 +30,36 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center text-center gap-6 font-sans">
           <h1 className="text-5xl sm:text-5xl font-bold text-white drop-shadow-lg whitespace-pre-line leading-tight">
-            {`Creative\nTechnologist`}
+            <img
+              src="/creativeTech.png"
+              alt="Creative Technologist"
+              className="mx-auto w-auto h-16 sm:h-25 object-contain"
+              draggable="false"
+            />
           </h1>
           <p className="text-lg sm:text-3xl text-white/80 max-w-xl whitespace-pre-line">
             {`Building at the intersection\nof Art, Culture and Technology`}
           </p>
+          {/* Social Icons Row */}
+          <div className="flex flex-row items-center justify-center gap-4 mt-2 mb-2">
+            <a href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
+              <img src="/github-mark-white.svg" alt="GitHub" className="w-7 h-7 hover:scale-110 transition-transform" />
+            </a>
+            <a href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
+              <img src="/linkedin-white.png" alt="LinkedIn" className="w-8 h-7.5 hover:scale-110 transition-transform" />
+            </a>
+          </div>
           <a
             href="#projects"
-            className="mt-6 rounded-full border-2 border-white bg-white/10 text-white px-8 py-3 text-lg font-semibold backdrop-blur-sm hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/60"
-            style={{ minWidth: 120 }}
+            className="mt-1 rounded-full border-2 border-white bg-white/10 text-white px-6 py-3 text-base font-semibold backdrop-blur-sm hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/60"
+            style={{ minWidth: 100 }}
           >
             View Work
           </a>
         </div>
       </div>
       {/* Portfolio Section */}
-      <section className="w-full min-h-screen bg-[#101010] flex flex-col items-center justify-center px-8 py-16 font-sans snap-start">
+      <section id="about" className="w-full min-h-screen bg-[#101010] flex flex-col items-center justify-center px-8 py-16 font-sans snap-start">
         <div className="flex flex-col items-center gap-6 max-w-5xl w-full font-sans">
           <h2 className="text-white text-2xl sm:text-3xl font-bold mb-2 text-center font-sans">About Me</h2>
           <img
@@ -54,9 +69,8 @@ export default function Home() {
             draggable="false"
           />
           <p className="text-white text-sm sm:text-lg max-w-2xl text-center opacity-90 font-sans">
-            I'm a self-taught creative technologist and full-stack product builder.<br /><br />
-            I design thoughtful user experiences, write clean code, and shape systems that bridge creativity and functionality. My work spans mobile apps, backend APIs and brand identities with a focus on connecting people through music, culture, and design.<br /><br />
-            Whether I'm prototyping a feature or scaling an idea, I think holistically about how things work and feel. I care about the details, the vision, and the impact.
+            I am a self taught creative technologist and full stack product builder with a passion for turning big ideas into seamless experiences. I excel at guiding a project from concept sketches through user research and into polished mobile apps, backend services and brand systems. I thrive in collaborative settings where brainstorming fuels rapid prototyping and where every iteration brings us closer to something both beautiful and functional.<br /><br />
+            I approach challenges holistically, balancing user needs, visual design, technical feasibility and long-term impact. My curiosity about music, culture and emerging technologies inspires me to explore new interactions and to craft moments that resonate. I am eager to join teams that are pushing creative boundaries and to contribute my blend of design thinking, clean code and systems vision.
           </p>
           <h3 className="text-white text-xl sm:text-2xl font-semibold mt-8 mb-2 text-center font-sans">Skills</h3>
           <div className="flex flex-wrap justify-center gap-3 font-sans">
@@ -76,11 +90,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-8">
             {/* Cycles - Share your playlist */}
             <div className="flex-1 bg-[#101010] rounded-3xl p-4 flex flex-col gap-3 shadow-md">
-              <div className="flex justify-center items-center gap-10 w-full h-[180px] rounded-2xl bg-[#faf5e6] p-4">
-                <img src="/cyclesAppStore.jpeg" alt="Cycles app store screenshot" className="h-full object-contain rounded-lg" />
-                <img src="/cycles1.PNG" alt="Cycles app screen 1" className="h-full object-contain rounded-lg" />
-                <img src="/cycles2.PNG" alt="Cycles app screen 2" className="h-full object-contain rounded-lg" />
-                <img src="/cycles3.png" alt="Cycles app screen 3" className="h-full object-contain rounded-lg" />
+              <div className="flex justify-center items-center gap-3 sm:gap-6 lg:gap-10 w-full h-auto lg:h-[180px] rounded-2xl bg-[#faf5e6] p-2 sm:p-4 flex-wrap">
+                <img src="/cyclesAppStore.jpeg" alt="Cycles app store screenshot" className="h-20 sm:h-28 md:h-32 lg:h-full w-auto max-w-[40%] sm:max-w-[30%] lg:max-w-none object-contain rounded-lg" />
+                <img src="/cycles1.PNG" alt="Cycles app screen 1" className="h-20 sm:h-28 md:h-32 lg:h-full w-auto max-w-[40%] sm:max-w-[30%] lg:max-w-none object-contain rounded-lg" />
+                <img src="/cycles2.PNG" alt="Cycles app screen 2" className="h-20 sm:h-28 md:h-32 lg:h-full w-auto max-w-[40%] sm:max-w-[30%] lg:max-w-none object-contain rounded-lg" />
+                <img src="/cycles3.png" alt="Cycles app screen 3" className="hidden lg:inline h-20 sm:h-28 md:h-32 lg:h-full w-auto max-w-[40%] sm:max-w-[30%] lg:max-w-none object-contain rounded-lg" />
               </div>
               <h3 className="text-white text-lg font-semibold mt-2">Cycles - Discover Playlists</h3>
               <div className="flex gap-2 flex-wrap mt-2">
@@ -130,7 +144,9 @@ export default function Home() {
                 <h3 className="text-xl sm:text-2xl font-semibold font-sans">DigiCrate</h3>
                 <p className="text-base sm:text-lg font-sans">DigiCrate is a full-stack web application with a Django REST backend and a Next.js/React frontend. Its main purpose is to let users discover random, sample-worthy songs by fetching metadata from Discogs and matching them with YouTube videos, then displaying the video and metadata in a visually engaging way.</p>
                 <div className="flex gap-2 flex-wrap mt-2">
-                  <img src="/github-mark.svg" alt="GitHub" className="w-6 h-6" />
+                  <a href="https://github.com/jdez23/DigiCrate" target="_blank" rel="noopener noreferrer">
+                    <img src="/github-mark.svg" alt="GitHub" className="w-6 h-6" />
+                  </a>
                   <span className="px-3 py-1 rounded-full bg-black/10 text-black text-xs font-sans border border-black/20">JavaScript</span>
                   <span className="px-3 py-1 rounded-full bg-black/10 text-black text-xs font-sans border border-black/20">Python</span>
                   <span className="px-3 py-1 rounded-full bg-black/10 text-black text-xs font-sans border border-black/20">Django</span>
@@ -147,7 +163,9 @@ export default function Home() {
                 <h3 className="text-xl sm:text-2xl font-semibold font-sans">Deli-Stones</h3>
                 <p className="text-base sm:text-lg font-sans">Deli-Stones is a Java-based point-of-sale application that lets customers build fully customized sandwich orders through a command-line interface. Users can add sandwiches, drinks, and chips, with pricing dynamically calculated based on size and extras. Upon checkout, the order is saved as a timestamped receipt file.</p>
                 <div className="flex gap-2 flex-wrap mt-2">
-                  <img src="/github-mark.svg" alt="GitHub" className="w-6 h-6" />
+                  <a href="https://github.com/jdez23/LearnToCode_Capstones/tree/main/Deli-Stones" target="_blank" rel="noopener noreferrer">
+                    <img src="/github-mark.svg" alt="GitHub" className="w-6 h-6" />
+                  </a>
                   <span className="px-3 py-1 rounded-full bg-black/10 text-black text-xs font-sans border border-black/20">Java</span>
                   <span className="px-3 py-1 rounded-full bg-black/10 text-black text-xs font-sans border border-black/20">Backend</span>
                 </div>
@@ -166,7 +184,15 @@ export default function Home() {
             />
           </div>
           <div className="relative flex justify-between items-center text-white mx-auto">
-            <span className="font-semibold text-lg">Contact</span>
+            <span className="flex items-center gap-4">
+              <a href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
+                <img src="/github-mark-white.svg" alt="GitHub" className="w-6 h-6 hover:scale-110 transition-transform" />
+              </a>
+              <a href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
+                <img src="/linkedin-white.png" alt="LinkedIn" className="w-7 h-6.5 hover:scale-110 transition-transform" />
+              </a>
+              <a href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</a>
+            </span>
             <span className="font-semibold text-lg">Let's shift culture.</span>
           </div>
         </footer>

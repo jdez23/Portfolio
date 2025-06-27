@@ -17,38 +17,39 @@ export default function CyclesStudiosPage() {
             `}</style>
 
             {/* Top Bar */}
-            <nav className="w-full flex items-center justify-between px-8 py-6 absolute top-0 left-0 z-20">
+            <nav className="w-full flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6 absolute top-0 left-0 z-20">
                 <Link href="/" className="text-white font-bold text-lg tracking-wide">Jesse Hernandez</Link>
-                <div className="flex gap-6">
-                    <span className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</span>
-                    <span className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</span>
-                    <span className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</span>
+                <div className="flex gap-4 sm:gap-6">
+                    <a href="/#about" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">About</a>
+                    <a href="/#projects" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Work</a>
+                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Resume</a>
+                    <a href="mailto:jessemhernandez@gmail.com" className="text-white/90 font-medium text-base cursor-pointer hover:text-white transition-colors">Contact</a>
                 </div>
             </nav>
             {/* Horizontal Line */}
-            <div className="absolute top-[68px] left-0 w-full z-10 flex justify-between px-8">
+            <div className="absolute top-[68px] left-0 w-full z-10 flex justify-between px-4 sm:px-8">
                 <hr className="mx-0 w-full border-t border-white" style={{ borderTopWidth: '1px' }} />
             </div>
 
             {/* Hero Section */}
-            <div className="flex flex-1 items-center justify-center min-h-screen">
-                <div className="relative w-full max-w-5xl mx-auto">
+            <div className="flex flex-1 items-center justify-center min-h-[60vh] sm:min-h-screen px-2">
+                <div className="w-full px-4 sm:px-8">
                     <div
-                        className="h-[550px] bg-cover bg-center rounded-3xl flex flex-col items-center justify-center text-center p-8"
+                        className="max-w-4xl mx-auto w-full h-[340px] sm:h-[550px] bg-cover bg-center rounded-3xl flex flex-col items-center justify-center text-center p-6 sm:p-12 md:p-16 lg:p-20 xl:p-24"
                         style={{ backgroundImage: "url('/gradient2.svg')" }}
                     >
-                        <h1 className="text-5xl font-bold text-white mb-4 inked-font">Cycles Studios</h1>
-                        <p className="text-xl text-white/90 max-w-lg inked-font">
+                        <h1 className="text-3xl sm:text-5xl font-bold text-white mb-2 sm:mb-4 inked-font">Cycles Studios</h1>
+                        <p className="text-base sm:text-xl text-white/90 max-w-xs sm:max-w-lg inked-font">
                             A creative studio bridging art, music, and tech for the next generation of culture.
                         </p>
-                        <div className="flex items-center gap-4 mt-8">
+                        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 mt-6 sm:mt-6">
                             <a
                                 href="https://www.cyclesstudios.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-4 py-1 rounded-full border border-white text-white bg-transparent hover:bg-white hover:text-black transition-colors font-sans text-sm"
                             >
-                                View
+                                View site
                             </a>
                             <a href="https://github.com/jdez23/Cycles-Studios" target="_blank" rel="noopener noreferrer">
                                 <img src="/github-mark-white.svg" alt="GitHub" className="w-6 h-6" />
@@ -60,117 +61,169 @@ export default function CyclesStudiosPage() {
 
             {/* Content Section */}
             <section className="bg-[#101010] text-white">
-                <div className="container mx-auto px-8">
+                <div className="container mx-auto px-4 sm:px-8">
                     {/* Mission Statement */}
-                    <div className="text-center max-w-4xl mx-auto mb-48">
-                        <h2 className="text-3xl font-bold mb-6 inked-font">Mission</h2>
-                        <p className="text-2xl text-white/80 inked-font">
-                            At Cycles Studios, we create spaces—digital and real—for artists to be seen, heard, and celebrated. Through interviews, visual storytelling, and creative direction, we elevate voices at the intersection of music, identity, and expression.
+                    <div className="text-center max-w-4xl mx-auto mb-24 sm:mb-48 font-sans">
+                        <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Mission</h2>
+                        <p className="text-lg sm:text-2xl text-white/80">
+                            Cycles Studios exists to give independent artists the same stage presence online that they fight for in real life. The platform blends editorial storytelling with interactive product design so musicians can share their work, their process, and their personalities without the gatekeepers of traditional media. My goal was to prove that thoughtful technology and strong creative direction can transform artist discovery into an immersive, community-driven experience.
                         </p>
                     </div>
 
                     {/* Grid Layout */}
-                    <div className="grid md:grid-cols-2 gap-x-16 gap-y-10">
-                        {/* Artist Conversation */}
-                        <div className="flex flex-col gap-4">
-                            <h3 className="text-2xl font-bold inked-font">Artist Conversation</h3>
-                            <p className="text-lg text-white/80 inked-font">
-                                An ongoing series of intimate interviews with emerging and established artists—discussing process, identity, community, and the creative hustle.
+                    <div className="flex flex-col gap-16 max-w-4xl mx-auto font-sans">
+                        {/* Creative Direction & Production */}
+                        <div className="flex flex-col gap-4 items-center text-center">
+                            <h3 className="text-xl sm:text-2xl font-bold">Creative Direction & Production</h3>
+                            <p className="text-white/80 text-base sm:text-lg">
+                                I guide artists from concept to launch. For Chezi I produced and engineered studio sessions, shaping the sonic palette track by track. For Sophia Frame I helped develop a visual identity, planned social campaigns and matched her with the right mix engineers. For J.Dez I blended audio production with generative-AI artwork to create a fully integrated release. Each project shows my ability to translate vision into tangible assets across audio, visual and interactive media.
                             </p>
-                            <div className="flex gap-4 mt-4">
-                                <div className="text-left">
-                                    <img src="/shante.jpg" alt="Shante" className="w-40 h-40 object-cover rounded-lg" />
-                                    <p className="mt-2 text-sm inked-font">Shante</p>
+                            <div className="flex flex-col sm:flex-row gap-4 mt-4 items-center justify-center">
+                                <div className="text-center">
+                                    <img src="/sophia.jpg" alt="Sophia Frame" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <p className="mt-2 text-sm flex items-center justify-center gap-2">
+                                        Sophia Frame
+                                        <a href="https://open.spotify.com/track/3FAhrboOosw3eojdgseKfy?si=ed103b2d72974f29" target="_blank" rel="noopener noreferrer">
+                                            <img src="/spotify.png" alt="Spotify" className="w-4 h-4 object-contain inline-block" />
+                                        </a>
+                                    </p>
                                 </div>
-                                <div className="text-left">
-                                    <img src="/malachi.jpg" alt="Malachi" className="w-40 h-40 object-cover rounded-lg" />
-                                    <p className="mt-2 text-sm inked-font">Malachi</p>
+                                <div className="text-center">
+                                    <img src="/chezi.jpg" alt="Chezi" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <p className="mt-2 text-sm flex items-center justify-center gap-2">
+                                        Chezi
+                                        <a href="https://open.spotify.com/album/4EDEhhvIeH5RhERTdydXlS?si=LZM7KaK4TGu2JBkxa4p17g" target="_blank" rel="noopener noreferrer">
+                                            <img src="/spotify.png" alt="Spotify" className="w-4 h-4 object-contain inline-block" />
+                                        </a>
+                                    </p>
                                 </div>
-                                <div className="text-left">
-                                    <img src="/kiyomi.jpg" alt="Kiyomi" className="w-40 h-40 object-cover rounded-lg" />
-                                    <p className="mt-2 text-sm inked-font">Kiyomi</p>
+                                <div className="text-center">
+                                    <img src="/jdez.png" alt="J.Dez" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <p className="mt-2 text-sm flex items-center justify-center gap-2">
+                                        J.Dez
+                                        <a href="https://open.spotify.com/track/2bLChcYmqDya9cJofRNQ78?si=0b2b374d6c7740fe" target="_blank" rel="noopener noreferrer">
+                                            <img src="/spotify.png" alt="Spotify" className="w-4 h-4 object-contain inline-block" />
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Artist Conversation */}
+                        <div className="flex flex-col gap-4 items-center text-center">
+                            <h3 className="text-xl sm:text-2xl font-bold">Artist Conversation</h3>
+                            <p className="text-base sm:text-lg text-white/80">
+                                I devised and run a long-form interview series that lets emerging and established artists unpack process, identity and community on camera. I write the segments, coordinate a small crew, direct the shoots and handle post-production so each episode moves seamlessly from raw footage to polished multiplatform content. The result is a library of human-centred stories that doubles as user-research for new product ideas.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-4 mt-4 items-center justify-center">
+                                <div className="text-center">
+                                    <img src="/shante.jpg" alt="Shante" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <p className="mt-2 text-sm flex items-center justify-center gap-2">
+                                        Shante
+                                        <a href="https://www.instagram.com/reel/DINlJ0Sx8lc/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                            <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
+                                        </a>
+                                    </p>
+                                </div>
+                                <div className="text-center">
+                                    <img src="/malachi.jpg" alt="Malachi" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <p className="mt-2 text-sm flex items-center justify-center gap-2">
+                                        Malachi
+                                        <a href="https://www.instagram.com/reel/DIMaMtlSCrJ/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                            <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
+                                        </a>
+                                    </p>
+                                </div>
+                                <div className="text-center">
+                                    <img src="/kiyomi.jpg" alt="Kiyomi" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <p className="mt-2 text-sm flex items-center justify-center gap-2">
+                                        Kiyomi
+                                        <a href="https://www.instagram.com/reel/DIPyditSCvG/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                            <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Street Interviews */}
-                        <div className="flex flex-col gap-4">
-                            <h3 className="text-2xl font-bold inked-font">Street Interviews</h3>
-                            <p className="text-white/80 text-lg inked-font">
-                                In the heart of the Bay Area, we take to the streets to ask the people meaningful questions about music and culture. Each interview offers a glimpse into how music shapes identity, memory, and connection.
+                        <div className="flex flex-col gap-4 items-center text-center">
+                            <h3 className="text-xl sm:text-2xl font-bold">Street Interviews</h3>
+                            <p className="text-white/80 text-base sm:text-lg">
+                                All across the Bay Area, I stage rapid-fire interviews that reveal how everyday listeners connect music to memory, identity, and community. To turn these moments into an interactive experience, I partnered with beloved local retailer Five Little Monkeys and hosted an on-site giveaway that tied a question of the day to a toy-store prize. I wrote the prompts, handled on-location directing, and produced a series of vertical clips that blended artist discovery with playful community engagement. The collaboration boosted the store's foot traffic, added a surge of new followers to our channels, and showed how content strategy can double as user research that feeds directly into the product roadmap.
                             </p>
-                            <div className="flex gap-4 mt-4">
-                                <div className="text-left">
-                                    <img src="/interview1.jpg" alt="Collaboration with Five Little Monkeys" className="w-40 h-40 object-cover rounded-lg" />
-                                    <p className="mt-2 text-sm inked-font">Collaboration with Five Little Monkeys</p>
+                            <div className="flex flex-col sm:flex-row gap-4 mt-4 items-center justify-center">
+                                <div className="text-center">
+                                    <img src="/interview1.jpg" alt="Collab with Five Little Monkeys" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <p className="mt-2 text-sm flex flex-col items-center justify-center gap-1">
+                                        <span>collab with</span>
+                                        <span className="flex items-center justify-center gap-2">
+                                            Five Little Monkeys
+                                            <a href="https://www.instagram.com/reel/DHMVbYkyPCB/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                                <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
+                                            </a>
+                                        </span>
+                                    </p>
                                 </div>
-                                <div className="text-left">
-                                    <img src="/interview2.jpg" alt="San Francisco Fisherman's Wharf" className="w-40 h-40 object-cover rounded-lg" />
-                                    <p className="mt-2 text-sm inked-font">San Francisco Fisherman's Wharf</p>
+                                <div className="text-center">
+                                    <img src="/interview2.jpg" alt="San Francisco Fisherman's Wharf" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <p className="mt-2 text-sm flex flex-col items-center justify-center gap-1">
+                                        <span>San Francisco</span>
+                                        <span className="flex items-center justify-center gap-2">
+                                            Fisherman's Wharf
+                                            <a href="https://www.instagram.com/reel/DE18yuIxSYp/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                                <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
+                                            </a>
+                                        </span>
+                                    </p>
                                 </div>
-                                <div className="text-left">
-                                    <img src="/interview3.jpg" alt="World of Dance 2025" className="w-40 h-40 object-cover rounded-lg" />
-                                    <p className="mt-2 text-sm inked-font">World of Dance 2025</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Creative Direction & Production */}
-                        <div className="flex flex-col gap-4">
-                            <h3 className="text-2xl font-bold inked-font">Creative Direction & Production</h3>
-                            <p className="text-white/80 text-lg inked-font">
-                                I work with artists to turn their ideas into multidimensional experiences. Guiding them from concept to execution.
-                            </p>
-                            <div className="flex gap-4 mt-4">
-                                <div className="text-left">
-                                    <img src="/sophia.jpg" alt="Sophia Frame" className="w-40 h-40 object-cover rounded-lg" />
-                                    <p className="mt-2 text-sm inked-font">Sophia Frame</p>
-                                </div>
-                                <div className="text-left">
-                                    <img src="/chezi.jpg" alt="Chezi" className="w-40 h-40 object-cover rounded-lg" />
-                                    <p className="mt-2 text-sm inked-font">Chezi</p>
-                                </div>
-                                <div className="text-left">
-                                    <img src="/jdez.png" alt="J.Dez" className="w-40 h-40 object-cover rounded-lg" />
-                                    <p className="mt-2 text-sm inked-font">J.Dez</p>
+                                <div className="text-center">
+                                    <img src="/interview3.jpg" alt="World of Dance 2025" className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-lg mx-auto" />
+                                    <p className="mt-2 text-sm flex flex-col items-center justify-center gap-1">
+                                        <span>World of</span>
+                                        <span className="flex items-center justify-center gap-2">
+                                            Dance 2025
+                                            <a href="https://www.instagram.com/reel/DGMyTAvpId_/?igsh=NjZiM2M3MzIxNA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                                <img src="/igTrans.png" alt="Instagram" className="w-5 h-5 object-contain inline-block" />
+                                            </a>
+                                        </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Social Media */}
-                        <div className="flex flex-col gap-4">
-                            <h3 className="text-2xl font-bold inked-font">Social Media</h3>
-                            <p className="text-white/80 text-lg inked-font">
-                                Cycles Studios isn't just a brand, it's a presence. Our storytelling extends to platforms like Instagram and TikTok, where we experiment with formats, grow community, and remix culture in real time.
+                        <div className="flex flex-col gap-4 items-center text-center">
+                            <h3 className="text-xl sm:text-2xl font-bold">Social Media</h3>
+                            <p className="text-white/80 text-base sm:text-lg">
+                                Cycles Studios is designed as a living product, so I prototype content on Instagram and TikTok the way I iterate on software features. I test new formats, read the analytics and refine weekly, turning storytelling experiments into measurable community growth. Every post is treated like a mini-launch, balancing narrative, design and data to keep the brand and its artists in motion.
                             </p>
-                            <div className="flex gap-4 mt-4">
-                                <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center inked-font">F</div>
-                                <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center inked-font">T</div>
-                                <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center inked-font">I</div>
-                            </div>
+                            <a href="https://www.instagram.com/cycles_studios/" target="_blank" rel="noopener noreferrer">
+                                <img src="/igTrans.png" alt="Instagram" className="w-12 h-12 object-contain" />
+                            </a>
                         </div>
                     </div>
 
                     {/* Final Paragraph */}
-                    <div className="text-center max-w-4xl mx-auto mt-32 mb-24">
-                        <p className="text-xl text-white inked-font">
-                            Whether it's collaborating with artists, building platforms, or reimagining how we connect—Cycles Studios is my way of doing more than just making media. It's about making meaning.
+                    <div className="text-center max-w-4xl mx-auto mt-16 sm:mt-32 mb-16 sm:mb-24 font-sans">
+                        <p className="text-base sm:text-xl text-white">
+                            Cycles Studios has been my test-bed for everything I love about product work: listening first, prototyping fast, and shipping ideas that bring people closer to music and to one another. Curating interviews, engineering tracks, and designing multiplatform experiences has taught me that technology is only powerful when it feels personal. I'm now looking to bring that blend of creative curiosity, systems thinking, and hands-on execution to a team that wants to push culture forward—one thoughtful product at a time.
                         </p>
                     </div>
                 </div>
             </section>
             {/* Footer */}
-            <footer className="relative w-full py-12 px-8 font-sans overflow-hidden">
-                <div className="absolute inset-0 w-full h-full -z-10">
-                    <img
-                        src="/gradient1.svg"
-                        alt="Background Gradient"
-                        className="object-cover w-full h-full"
-                        draggable="false"
-                    />
-                </div>
-                <div className="relative flex justify-between items-center text-white max-w-6xl mx-auto">
-                    <span className="font-semibold text-lg">Contact</span>
+            <footer className="relative w-full py-8 sm:py-12 px-4 sm:px-8 font-sans overflow-hidden bg-[#101010]">
+                <div className="relative flex flex-col sm:flex-row justify-between items-center text-white max-w-6xl mx-auto gap-2 sm:gap-0">
+                    <span className="flex items-center gap-4">
+                        <a href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
+                            <img src="/github-mark-white.svg" alt="GitHub" className="w-6 h-6 hover:scale-110 transition-transform" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/jesse-hernandez-a89302281" target="_blank" rel="noopener noreferrer">
+                            <img src="/linkedin-white.png" alt="LinkedIn" className="w-7 h-6.5 hover:scale-110 transition-transform" />
+                        </a>
+                        <a href="mailto:jessemhernandez@gmail.com" className="font-semibold text-lg hover:underline">jessemhernandez@gmail.com</a>
+                    </span>
                     <span className="font-semibold text-lg">Let's shift culture.</span>
                 </div>
             </footer>
