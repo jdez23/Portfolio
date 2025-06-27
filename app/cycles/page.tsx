@@ -102,7 +102,7 @@ export default function CyclesPage() {
                     {/* Row 3: The Impact */}
                     <div className="grid md:grid-cols-2 gap-4 items-center">
                         <div className="bg-[#faf5e6] p-8 rounded-3xl flex flex-row justify-center items-center gap-4">
-                            <img src="/cyclesAppStore.jpeg" alt="Cycles app screen" className="h-80 object-contain rounded-3xl" />
+                            <img src="/cyclesAppStore.png" alt="Cycles app screen" className="h-80 object-contain rounded-3xl" />
                             <img src="/appReview1.png" alt="Cycles app screen" className="h-80 object-contain rounded-3xl" />
                             <img src="/appReview2.png" alt="Cycles app screen" className="h-80 object-contain rounded-3xl hidden xl:block" />
                         </div>

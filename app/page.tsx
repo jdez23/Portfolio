@@ -42,6 +42,13 @@ export default function Home() {
           </p>
           {/* Social Icons Row */}
           <div className="flex flex-row items-center justify-center gap-4 mt-2 mb-2">
+            <a
+              href="#projects"
+              className="rounded-full border-2 border-white bg-white/10 text-white px-3 py-1 text-base font-semibold backdrop-blur-sm hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/60"
+              style={{ minWidth: 100 }}
+            >
+              View Work
+            </a>
             <a href="https://github.com/jdez23" target="_blank" rel="noopener noreferrer">
               <img src="/github-mark-white.svg" alt="GitHub" className="w-7 h-7 hover:scale-110 transition-transform" />
             </a>
@@ -49,13 +56,6 @@ export default function Home() {
               <img src="/linkedin-white.png" alt="LinkedIn" className="w-8 h-7.5 hover:scale-110 transition-transform" />
             </a>
           </div>
-          <a
-            href="#projects"
-            className="mt-1 rounded-full border-2 border-white bg-white/10 text-white px-6 py-3 text-base font-semibold backdrop-blur-sm hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/60"
-            style={{ minWidth: 100 }}
-          >
-            View Work
-          </a>
         </div>
       </div>
       {/* Portfolio Section */}
@@ -91,7 +91,7 @@ export default function Home() {
             {/* Cycles - Share your playlist */}
             <div className="flex-1 bg-[#101010] rounded-3xl p-4 flex flex-col gap-3 shadow-md">
               <div className="flex justify-center items-center gap-3 sm:gap-6 lg:gap-10 w-full h-auto lg:h-[180px] rounded-2xl bg-[#faf5e6] p-2 sm:p-4 flex-wrap">
-                <img src="/cyclesAppStore.jpeg" alt="Cycles app store screenshot" className="h-20 sm:h-28 md:h-32 lg:h-full w-auto max-w-[40%] sm:max-w-[30%] lg:max-w-none object-contain rounded-lg" />
+                <img src="/cyclesAppStore.png" alt="Cycles app store screenshot" className="h-20 sm:h-28 md:h-32 lg:h-full w-auto max-w-[40%] sm:max-w-[30%] lg:max-w-none object-contain rounded-lg" />
                 <img src="/cycles1.PNG" alt="Cycles app screen 1" className="h-20 sm:h-28 md:h-32 lg:h-full w-auto max-w-[40%] sm:max-w-[30%] lg:max-w-none object-contain rounded-lg" />
                 <img src="/cycles2.PNG" alt="Cycles app screen 2" className="h-20 sm:h-28 md:h-32 lg:h-full w-auto max-w-[40%] sm:max-w-[30%] lg:max-w-none object-contain rounded-lg" />
                 <img src="/cycles3.png" alt="Cycles app screen 3" className="hidden lg:inline h-20 sm:h-28 md:h-32 lg:h-full w-auto max-w-[40%] sm:max-w-[30%] lg:max-w-none object-contain rounded-lg" />
